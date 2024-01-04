@@ -18,11 +18,6 @@ ament_target_dependencies(distance_controller rclcpp geometry_msgs nav_msgs tf2)
 add_executable(distance_display src/distance_display.cpp)
 ament_target_dependencies(distance_display rclcpp nav_msgs)
 
-install(DIRECTORY
-  launch
-  DESTINATION share/${PROJECT_NAME}/
-)
-
 install(TARGETS 
   distance_controller
   distance_display
